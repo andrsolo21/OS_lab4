@@ -39,8 +39,7 @@ int main(void) {
             char string[LEN];
 
             int chr;
-			
-			
+
             while (fgets(string, LEN, stdin) != NULL) {
                 fprintf(fp, "%s", string);
             }

@@ -2,7 +2,7 @@
 #include <string.h>
 
 int main() {
-    const size_t LEN = 51;
+    const size_t LEN = 255;
     char currentline[LEN];
 	int sum = 0;
 	int last = 0;

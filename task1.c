@@ -6,7 +6,7 @@
 #define        W  1   		/*stdout 					  */ 
 
 int main(void) {
-    int fd[2]; // 0 - Read, 1 - Write
+    int fd[2];
     int status;
     switch (fork()) {
         case -1: {

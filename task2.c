@@ -35,12 +35,10 @@ int main(void) {
             close(q[W]);
 
             fp = fdopen(p[W], "w");
-            const size_t LEN = 51;
+            const size_t LEN = 255;
             char string[LEN];
 
             int chr;
-            const size_t MAX_COUNT = 8;
-            size_t count = 0;
 			
 			
             while (fgets(string, LEN, stdin) != NULL) {
@@ -54,7 +52,6 @@ int main(void) {
             char currentline[LEN];
             int sum = 0;
             int last = 0;
-            int temp = 0;
             while (fgets(currentline, LEN, fp) != NULL) {
 
                 for (char * i = currentline; *i != '\0'; i++){

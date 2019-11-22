@@ -26,8 +26,7 @@ int main(int argc, char **argv) {
 
 
     char string[LEN];
-    size_t count = 0;
-    const size_t MAX_COUNT = 8;
+
     while (fgets(string, LEN, stdin) != NULL) {
         strcpy(msg.string, string);
         write(fdpub, (char *) &msg, sizeof(msg));
